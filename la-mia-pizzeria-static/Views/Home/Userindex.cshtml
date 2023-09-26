@@ -1,0 +1,149 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+    ViewData["Title"] = "Home Page";
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La mia Pizzeria Bella Napoli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/Home/Userindex">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/Index">Vai alle pizze</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                        <button class="btn btn-outline-success" type="submit">Cerca la pizza</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-6 my-5">
+                    <div class="text-center">
+                        <h1>
+                            Sei affamato? Prova le nostre pizze!!Ne puoi scegliere dal nostro menu che trovi in basso!!
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-around row text-center g-5 gy-4">
+                <div class="col-12">
+                    <img class="w-50 img-fluid" src="~/img/margherita.jpg" />
+                    <div class=" m-4 text-center text-white bg-info">
+                        <h4 class="p-3 m-0">MARGHERITA</h4>
+                    </div>
+                    <div class="shadow">
+                        <div>
+                            <p class="text-center p-4 mb-2">
+                                La Margherita. Un super classico della cucina Napoletana.
+                            </p>
+                            <div class="border-top">
+                                <h5 class="text-center p-4">4,50€</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-around row text-center g-5 gy-4">
+                <div class="col-12">
+                    <img class="w-50 img-fluid" src="~/img/salame.jpg" />
+                    <div class=" m-4 text-center text-white bg-info">
+                        <h4 class="p-3 m-0">Diavola</h4>
+                    </div>
+                    <div class="shadow">
+                        <div>
+                            <p class="text-center p-4 mb-2">
+                                La Diavola, prende il nome dalla sua super piccantezza con il salame di nostra produzione e nduja
+                            </p>
+                            <div class="border-top">
+                                <h5 class="text-center p-4">10,50€</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-around row text-center g-5 gy-4">
+                <div class="col-12">
+                    <img class="w-50 img-fluid" src="~/img/funghi.jpg" />
+                    <div class=" m-4 text-center text-white bg-info">
+                        <h4 class="p-3 m-0">PROSCIUTTO E FUNGHI</h4>
+                    </div>
+                    <div class="shadow">
+                        <div>
+                            <p class="text-center p-4 mb-2">
+                                Una pizza molto autunnale con il prosciutto San Daniele e i funghi di nostra produzione cresciuti a terra!
+                            </p>
+                            <div class="border-top">
+                                <h5 class="text-center p-4">7,50€</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-around row text-center g-5 gy-4">
+                <div class="col-12">
+                    <img class="w-50 img-fluid" src="~/img/crudo.jpg" />
+                    <div class=" m-4 text-center text-white bg-info">
+                        <h4 class="p-3 m-0">SAPORITA</h4>
+                    </div>
+                    <div class="shadow">
+                        <div>
+                            <p class="text-center p-4 mb-2">
+                                La nostra crudo e rucola.Condita con scaglie di parmiggiano DOP.
+                            </p>
+                            <div class="border-top">
+                                <h5 class="text-center p-4">5,50€</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2023 Pizzeria Bella Napoli, Inc</p>
+
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="~/img/bella_napoli.jpg" />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">Sei l'Admin? entra qui</a></li>
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">I nostri prezzi</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Domande</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/stefanom98/" class="nav-link px-2 text-muted">Chi siamo</a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

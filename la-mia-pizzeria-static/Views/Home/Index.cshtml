@@ -1,9 +1,134 @@
 ﻿@{
-    
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizzeria Bella Napoli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/mystyle.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/Home/Userindex">HomePage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Vai alle pizze</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                        <button class="btn btn-outline-success" type="submit">Cerca la pizza</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <h1 class="my-5">Lista delle pizze</h1>
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Immagine</th>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Descrizione</th>
+                                <th scope="col">Prezzo</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><img class="w-75" src="~/img/margherita.jpg" alt="Margherita" /></td>
+                                <td>La Pizza Margherita</td>
+                                <td>La pizza classica Napoletana</td>
+                                <td>4,50€</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td><img class="w-75" src="~/img/funghi.jpg" alt="Prosciutto e funghi" /></td>
+                                <td>La Pizza Prosciutto e funghi</td>
+                                <td>Una pizza molto autunnale con il prosciutto San Daniele e i funghi di nostra produzione cresciuti a terra!</td>
+                                <td>7,50€</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><img class="w-75" src="~/img/salame.jpg" alt="Diavola" /></td>
+                                <td>La Pizza Diavola</td>
+                                <td>La Diavola, prende il nome dalla sua super piccantezza con il salame di nostra produzione e nduja</td>
+                                <td>10,50€</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td><img class="w-75" src="~/img/crudo.jpg" alt="Crudo e rucola" /></td>
+                                <td>La Pizza Crudo e rucola</td>
+                                <td>La nostra crudo e rucola.Condita con scaglie di parmiggiano DOP.</td>
+                                <td>5,50€</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2023 Pizzeria Bella Napoli, Inc</p>
+
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="~/img/bella_napoli.jpg" />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">Pizzeria Bella Napoli</a></li>
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">I nostri prezzi</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Domande</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/stefanom98/" class="nav-link px-2 text-muted">Chi siamo</a></li>
+        </ul>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
